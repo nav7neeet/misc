@@ -13,7 +13,7 @@ public class Test
 {
     public static void main(String[] args)
     {
-    	Signer signer=HMACSigner.newSHA512Signer("too many secrets");
+    	Signer signer=HMACSigner.newSHA512Signer("too many secretss");
     	JWT jwt=new JWT();
     	jwt.setIssuer("www.acme.com");
     	jwt.setIssuedAt(ZonedDateTime.now(ZoneOffset.UTC));
