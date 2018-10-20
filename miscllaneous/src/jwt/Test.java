@@ -17,7 +17,7 @@ public class Test
     	JWT jwt=new JWT();
     	jwt.setIssuer("www.acme.com");
     	jwt.setIssuedAt(ZonedDateTime.now(ZoneOffset.UTC));
-    	jwt.setSubject("helo");
+    	jwt.setSubject("hello");
     	jwt.setExpiration(ZonedDateTime.now(ZoneOffset.UTC).plusMinutes(60));
     	String encodedJWT = JWT.getEncoder().encode(jwt, signer);
     	System.out.println(encodedJWT);
